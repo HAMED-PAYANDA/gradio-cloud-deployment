@@ -128,7 +128,7 @@ ibmcloud ce app get --name demo1 --output url
 
 📸 Deployment Verification
 The screenshot below confirms successful build execution (Status: succeeded), image push to the registry, serverless app instantiation, and live rendering of the Gradio interface over a public IBM Code Engine URL endpoint:
-![Gradio Web App Interface](screenshot.png)  
+![Gradio Web App Interface](screenshot1.png)  
 
 
 
