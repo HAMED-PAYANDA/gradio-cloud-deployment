@@ -124,9 +124,10 @@ ibmcloud ce application create --name demo1 \
 Retrieve public URL endpoint:
 ibmcloud ce app get --name demo1 --output url
 
-## 📸 Deployment Verification
+📸 Deployment Verification
 The screenshot below confirms successful build execution (Status: succeeded), image push to the registry, serverless app instantiation, and live rendering of the Gradio interface over a public IBM Code Engine URL endpoint:
-<img width="1069" height="985" alt="screenshot1" src="https://github.com/user-attachments/assets/902c6d91-3e30-47a3-9338-6f2880863262" />
+(screenshot1.png)
+
 
 
 •	Build Run ID: c77307fb-430a-4f3e-b902-6e93e1ec1410
