@@ -1,3 +1,4 @@
+<img width="1069" height="985" alt="screenshot1" src="https://github.com/user-attachments/assets/c04f6bb3-dc5e-4ac6-950a-f1338d53148c" />
 <div align="center">
 
 # ☁️ Serverless Gradio Deployment on IBM Code Engine
