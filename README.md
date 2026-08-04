@@ -39,25 +39,33 @@ By leveraging serverless container technology, the application eliminates manual
 	2.	Context Target & Project Selection: Target active IBM Cloud resource groups (production) and select the Code Engine project instance.
 	3.	Automated Image Build: Upload source files directly to IBM Code Engine, compile the Docker container image, and push artifacts to the private IBM Container Registry (ICR).
 	4.	Serverless Application Deployment: Instantiate container demo1 with 2GB ephemeral storage, minimum scale set to 1, exposing port 7860 over public HTTPS.
-🛠️ Tech Stack & Tools
-Category	Technology	Purpose
-Application UI	Gradio v5.23.2	Rapid web application interface framework
-Language Runtime	Python 3.10	Core application execution environment
-Container Runtime	Docker	Blueprint definition and containerization
-Serverless Platform	IBM Cloud Code Engine	Fully managed containerized workload hosting
-Image Registry	IBM Cloud Container Registry (ICR)	Enterprise private image repository
-CLI Management	IBM Cloud CLI (ibmcloud ce)	Command-line project orchestration and builds
+```
+
+## 🛠️ Core Tech Stack
+
+| Category | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Application UI** | Gradio v5.23.2 | Rapid web application interface framework |
+| **Language Runtime** | Python 3.10 | Core application execution environment |
+| **Container Runtime**| Docker | Blueprint definition and containerization |
+| **Serverless Platform**| IBM Cloud Code Engine | Fully managed containerized workload hosting |
+| **Image Registry** | IBM Cloud Container Registry (ICR) | Enterprise private image repository |
+| **CLI Management** | IBM Cloud CLI (ibmcloud ce) | Command-line project orchestration and builds |
+
 📁 Project Structure
+```text
 gradio-cloud-deployment/
 ├── myapp/
 │   ├── demo.py               # Main Gradio application code
 │   ├── Dockerfile            # Multi-stage Docker container specification
 │   └── requirements.txt      # Application dependencies
 └── README.md                 # Project documentation
+```
 
 ⚙️ Step-by-Step Implementation
 1. Application Development & Container Blueprint
 Create project folder and files:
+```text
 mkdir myapp && cd myapp
 touch demo.py Dockerfile requirements.txt
 
@@ -89,16 +97,20 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 COPY . .
 
 CMD ["python", "demo.py"]
+```
 
 2. IBM Code Engine Orchestration
 Step A: Target Resource Group & Project Context
+```text
 # Target the active resource group
 ibmcloud target -g production
 
 # Select the assigned Code Engine project
 ibmcloud ce project select -n "Code Engine - sn-labs-hamedpayanda"
+```
 
 Step B: Build Container Image from Local Source
+```text
 # Create build configuration pointing to IBM Container Registry
 ibmcloud ce build create --name build-local-dockerfile1 \
                          --build-type local --size large \
@@ -112,8 +124,10 @@ ibmcloud ce buildrun submit --name buildrun-local-dockerfile1 \
 
 Verify build status:
 ibmcloud ce buildrun get -n buildrun-local-dockerfile1
+```
 
 Step C: Deploy Serverless Container
+```text
 ibmcloud ce application create --name demo1 \
                                --image us.icr.io/${SN_ICR_NAMESPACE}/myapp1 \
                                --registry-secret icr-secret \
@@ -145,3 +159,4 @@ The screenshot below confirms successful build execution (Status: succeeded), im
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
 Completed as part of the IBM AI Developer.
+
