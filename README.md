@@ -144,4 +144,4 @@ The screenshot below confirms successful build execution (Status: succeeded), im
 👤 Author
 Hamed Payanda
 •	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM CognitiveClass.ai / Skills Network Cloud Engineering Curriculum.
+Completed as part of the IBM AI Developer.
