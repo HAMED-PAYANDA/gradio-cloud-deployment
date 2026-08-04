@@ -1,5 +1,3 @@
-<img width="1069" height="985" alt="screenshot1" src="https://github.com/user-attachments/assets/c04f6bb3-dc5e-4ac6-950a-f1338d53148c" />
-<div align="center">
 
 # ☁️ Serverless Gradio Deployment on IBM Code Engine
 
@@ -129,6 +127,8 @@ ibmcloud ce app get --name demo1 --output url
 📸 Deployment Verification
 The screenshot below confirms successful build execution (Status: succeeded), image push to the registry, serverless app instantiation, and live rendering of the Gradio interface over a public IBM Code Engine URL endpoint:
 ![Gradio Deployment on IBM Code Engine](screenshot1.png)
+<img width="1069" height="985" alt="screenshot1" src="https://github.com/user-attachments/assets/c04f6bb3-dc5e-4ac6-950a-f1338d53148c" />
+<div align="center">
 
 •	Build Run ID: c77307fb-430a-4f3e-b902-6e93e1ec1410
 •	Build Status: succeeded
