@@ -3,7 +3,7 @@
 
 An end-to-end DevOps pipeline for containerizing a Gradio UI web application and deploying it to IBM Cloud Code Engine using Docker and serverless architecture.
 
-[![IBM Certification](https://img.shields.io/badge/IBM-AI%20Developer%20Program-blue?style=flat-square&logo=ibm)](https://cognitiveclass.ai/)
+[![IBM Certification](https://img.shields.io/badge/IBM-AI%20Developer%20Program-blue?style=for-the-badge&logo=ibm)](https://cognitiveclass.ai/)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-5.23.2-FF5722?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app/)
