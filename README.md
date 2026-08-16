@@ -42,6 +42,7 @@ By leveraging serverless container technology, the application eliminates manual
 	3.	Automated Image Build: Upload source files directly to IBM Code Engine, compile the Docker container image, and push artifacts to the private IBM Container Registry (ICR).
 	4.	Serverless Application Deployment: Instantiate container demo1 with 2GB ephemeral storage, minimum scale set to 1, exposing port 7860 over public HTTPS.
 ```
+
 ```mermaid
 graph TD
     subgraph Local Context
@@ -58,6 +59,7 @@ graph TD
         D -->|Provision Public HTTPS Endpoint| E[Live Public App Endpoint<br/>[https://demo1.us-south.codeengine.appdomain.cloud](https://demo1.us-south.codeengine.appdomain.cloud)]
     end
 ```
+
 Workflow Steps:
 	1.	Local Application Specs: Develop application script (demo.py), specify dependencies (requirements.txt), and construct image build instructions (Dockerfile).
 	2.	Context Target & Project Selection: Target active IBM Cloud resource groups (production) and select the Code Engine project instance.
