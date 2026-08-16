@@ -55,8 +55,8 @@ graph TD
     end
 
     subgraph Serverless Execution
-        C -->|Instantiate Container| D[IBM Code Engine App: demo1<br/>Port: 7860 | Ephemeral Storage: 2G]
-        D -->|Provision Public HTTPS Endpoint| E[Live Public App Endpoint<br/>[https://demo1.us-south.codeengine.appdomain.cloud](https://demo1.us-south.codeengine.appdomain.cloud)]
+        C -->|Instantiate Container| D[IBM Code Engine App: demo1<br/>Port: 7860 - Ephemeral Storage: 2G]
+        D -->|Provision Public HTTPS Endpoint| E[Live Public App Endpoint<br/>https://demo1.us-south.codeengine.appdomain.cloud]
     end
 ```
 
