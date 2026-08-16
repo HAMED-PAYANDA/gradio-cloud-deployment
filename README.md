@@ -61,6 +61,7 @@ graph TD
 ```
 
 Workflow Steps:
+
 	1.	Local Application Specs: Develop application script (demo.py), specify dependencies (requirements.txt), and construct image build instructions (Dockerfile).
 	2.	Context Target & Project Selection: Target active IBM Cloud resource groups (production) and select the Code Engine project instance.
 	3.	Automated Image Build: Upload source files directly to IBM Code Engine, compile the Docker container image, and push artifacts to the private IBM Container Registry (ICR).
@@ -81,7 +82,7 @@ Workflow Steps:
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 ```text
 gradio-cloud-deployment/
 ├── myapp/
@@ -92,7 +93,7 @@ gradio-cloud-deployment/
 ```
 ---
 
-⚙️ Step-by-Step Implementation
+## ⚙️ Step-by-Step Implementation
 1. Application Development & Container Blueprint
 Create project folder and files:
 ```bash
@@ -178,7 +179,7 @@ ibmcloud ce app get --name demo1 --output url
 ```
 ---
 
-📸 Deployment Verification
+## 📸 Deployment Verification
 The screenshot below confirms successful build execution (Status: succeeded), image push to the registry, serverless app instantiation, and live rendering of the Gradio interface over a public IBM Code Engine URL endpoint:
 ![Gradio Code Engine Deployment](screenshot1.png)  
 
@@ -194,7 +195,8 @@ The screenshot below confirms successful build execution (Status: succeeded), im
 ---
 
 📜 License
-This project is licensed under the Apache 2.0 License.
+
+This project is licensed under the [Apache 2.0 License](LICENSE).
 
 **Hamed Payanda**
 * **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
