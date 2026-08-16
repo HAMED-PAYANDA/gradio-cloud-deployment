@@ -3,11 +3,13 @@
 
 An end-to-end DevOps pipeline for containerizing a Gradio UI web application and deploying it to IBM Cloud Code Engine using Docker and serverless architecture.
 
+[![IBM Certification](https://img.shields.io/badge/IBM-AI%20Developer%20Program-blue?style=flat&logo=ibm)](https://cognitiveclass.ai/)
 [![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-5.23.2-FF5722?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app/)
 [![IBM Cloud](https://img.shields.io/badge/IBM_Cloud-Code_Engine-052FAD?style=for-the-badge&logo=ibm&logoColor=white)](https://cloud.ibm.com/)
 [![Status](https://img.shields.io/badge/Status-Deployed_&_Verified-success?style=for-the-badge)](#-deployment-verification)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=flat)
 
 </div>
 
@@ -155,8 +157,8 @@ The screenshot below confirms successful build execution (Status: succeeded), im
 
 ---
 
-👤 Author
-Hamed Payanda
-•	GitHub: @HAMED-PAYANDA
-Completed as part of the IBM AI Developer.
+**Hamed Payanda**
+* **GitHub:** [@HAMED-PAYANDA](https://github.com/HAMED-PAYANDA)
+* Completed as part of the **IBM AI Developer Program**.
+
 
